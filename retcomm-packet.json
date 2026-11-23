@@ -1,0 +1,98 @@
+{
+  "format_version": 1,
+  "id": "asterix-and-obelix-take-on-caesar-psx",
+  "name": "Asterix & Obelix Take on Caesar",
+  "kind": "recomp",
+  "platform": "psx",
+  "source_repo": "asterix-and-obelix-take-on-caesar-recomp",
+  "rom_identity": {
+    "crc32": [
+      "902bd268"
+    ],
+    "md5": [
+      "b3a6b15a0efef0e8fb45f5115b40c666"
+    ],
+    "sha1": [
+      "00f8dde48933199f27b2c3040eb308cc6bcf99c7"
+    ],
+    "disc_serials": [
+      "SLES-02475"
+    ],
+    "sizes": [
+      139821696
+    ],
+    "filenames": [
+      "Asterix & Obelix Take on Caesar (Europe).cue",
+      "Asterix & Obelix Take on Caesar (Europe) (Track 1).bin"
+    ],
+    "track_counts": [
+      9
+    ],
+    "disc_fps": [
+      "163331c70d930be870cfe95198f5179eec677111dddcf1d41c6f9e31153c7e51"
+    ],
+    "require_cue": true
+  },
+  "rom_extensions": [
+    ".cue",
+    ".bin",
+    ".chd"
+  ],
+  "bios_identity": {
+    "required": true,
+    "name": "SCPH5552.BIN",
+    "profile": "SCPH5552",
+    "crc32": [
+      "d786f0b9"
+    ],
+    "md5": [
+      "32736f17079d0b2b7024407c39bd3050"
+    ],
+    "sha1": [
+      "f6bc2d1f5eb6593de7d089c425ac681d6fffd3f0"
+    ],
+    "sha256": [
+      "1faaa18fa820a0225e488d9f086296b8e6c46df739666093987ff7d8fd352c09"
+    ],
+    "sizes": [
+      524288
+    ],
+    "filenames": [
+      "SCPH5552.BIN"
+    ]
+  },
+  "release": {
+    "github": "alexbeavs-ps1-ports/asterix-and-obelix-take-on-caesar-recomp",
+    "allow_prerelease": false,
+    "asset_glob": {
+      "windows-x64": "asterix-and-obelix-take-on-caesar-*-windows-x64.zip",
+      "linux-x64": "asterix-and-obelix-take-on-caesar-*-linux-x64.zip",
+      "macos-arm64": "asterix-and-obelix-take-on-caesar-*-macos-arm64.zip",
+      "macos-x64": "asterix-and-obelix-take-on-caesar-*-macos-x64.zip"
+    }
+  },
+  "launch": {
+    "windows": "asterix_and_obelix_take_on_caesar.exe",
+    "linux": "asterix_and_obelix_take_on_caesar",
+    "macos": "asterix_and_obelix_take_on_caesar"
+  },
+  "build": {
+    "source": {
+      "github": "alexbeavs-ps1-ports/asterix-and-obelix-take-on-caesar-recomp",
+      "ref": ""
+    },
+    "toolchain": {
+      "id": "cmake-clang-v1",
+      "min_version": "1.0.14"
+    },
+    "generate": {
+      "engine": "psxrecomp",
+      "config": "game.toml"
+    },
+    "cmake": {
+      "build_dir": "build",
+      "target": "psx-runtime",
+      "config": "Release"
+    }
+  }
+}

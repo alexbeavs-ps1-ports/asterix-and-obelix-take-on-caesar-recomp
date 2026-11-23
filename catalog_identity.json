@@ -1,0 +1,46 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Asterix & Obelix Take on Caesar",
+    "id": "SLES-02475",
+    "boot_exe": "SLES_024.75"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "Europe",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Asterix & Obelix Take on Caesar (Europe).cue",
+    "bin_name": "Asterix & Obelix Take on Caesar (Europe) (Track 1).bin",
+    "track_counts": [
+      9
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 139821696,
+      "md5": "b3a6b15a0efef0e8fb45f5115b40c666",
+      "sha1": "00f8dde48933199f27b2c3040eb308cc6bcf99c7",
+      "crc32": "902bd268"
+    },
+    "disc_fp": "163331c70d930be870cfe95198f5179eec677111dddcf1d41c6f9e31153c7e51"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x8002026C",
+    "text_size": "0x00088800",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 1108,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
